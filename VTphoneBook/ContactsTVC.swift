@@ -38,6 +38,14 @@ class ContactsTVC: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let toRemove = contactsFromSection(sectionNumber: indexPath.section)[indexPath.row]
+            contacts.remove(at: contacts.index(of: toRemove)!)
+        }
+        tableView.reloadData()
+    }
+
     //put every unique first character of the contact name into the sections
     func updateSections(){
         sections.removeAll()
@@ -76,4 +84,5 @@ class ContactsTVC: UITableViewController {
         }
         return answer
     }
+    
 }
