@@ -56,6 +56,7 @@ class HistoryTVC: UITableViewController {
                 sections.append(candidate)
             }
         }
+        sections.sort()
     }
     
     func numberOfHistoryUnitsInSection(sectionNumber: Int) -> Int{

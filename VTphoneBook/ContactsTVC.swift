@@ -7,10 +7,10 @@ class ContactsTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contacts.append(Contact(name: "av", phone: "ss"))
-        contacts.append(Contact(name: "ss", phone: "ss"))
-        contacts.append(Contact(name: "bb", phone: "ss"))
-        contacts.append(Contact(name: "s3", phone: "ss"))
+        contacts.append(Contact(name: "grandma", phone: "241-***"))
+        contacts.append(Contact(name: "police", phone: "102"))
+        contacts.append(Contact(name: "bb", phone: "+7(910)***"))
+        contacts.append(Contact(name: "me", phone: "+7(910)***"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,6 +70,7 @@ class ContactsTVC: UITableViewController {
                 sections.append(candidate)
             }
         }
+        sections.sort()
     }
     
     func numberOfContactsInSection(sectionNumber: Int) -> Int{
