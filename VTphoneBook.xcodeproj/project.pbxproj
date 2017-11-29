@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1E5134831FCE1AC500D6B7E9 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5134821FCE1AC400D6B7E9 /* Contact.swift */; };
 		1E5134851FCE39D800D6B7E9 /* NewContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5134841FCE39D800D6B7E9 /* NewContactVC.swift */; };
+		1E5134871FCE494100D6B7E9 /* HistoryUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5134861FCE494100D6B7E9 /* HistoryUnit.swift */; };
+		1E5134891FCE4A4600D6B7E9 /* HistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5134881FCE4A4600D6B7E9 /* HistoryTVC.swift */; };
 		1EC0BD7A1FCDFE88008AFE05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0BD791FCDFE88008AFE05 /* AppDelegate.swift */; };
 		1EC0BD7C1FCDFE88008AFE05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0BD7B1FCDFE88008AFE05 /* ViewController.swift */; };
 		1EC0BD7F1FCDFE88008AFE05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC0BD7D1FCDFE88008AFE05 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		1E5134821FCE1AC400D6B7E9 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		1E5134841FCE39D800D6B7E9 /* NewContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactVC.swift; sourceTree = "<group>"; };
+		1E5134861FCE494100D6B7E9 /* HistoryUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryUnit.swift; sourceTree = "<group>"; };
+		1E5134881FCE4A4600D6B7E9 /* HistoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTVC.swift; sourceTree = "<group>"; };
 		1EC0BD761FCDFE88008AFE05 /* VTphoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTphoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC0BD791FCDFE88008AFE05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC0BD7B1FCDFE88008AFE05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				1EC0BD8B1FCE0F30008AFE05 /* ContactsTVC.swift */,
 				1E5134821FCE1AC400D6B7E9 /* Contact.swift */,
 				1E5134841FCE39D800D6B7E9 /* NewContactVC.swift */,
+				1E5134861FCE494100D6B7E9 /* HistoryUnit.swift */,
+				1E5134881FCE4A4600D6B7E9 /* HistoryTVC.swift */,
 			);
 			path = VTphoneBook;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 			files = (
 				1E5134831FCE1AC500D6B7E9 /* Contact.swift in Sources */,
 				1EC0BD7C1FCDFE88008AFE05 /* ViewController.swift in Sources */,
+				1E5134871FCE494100D6B7E9 /* HistoryUnit.swift in Sources */,
 				1E5134851FCE39D800D6B7E9 /* NewContactVC.swift in Sources */,
+				1E5134891FCE4A4600D6B7E9 /* HistoryTVC.swift in Sources */,
 				1EC0BD7A1FCDFE88008AFE05 /* AppDelegate.swift in Sources */,
 				1EC0BD8C1FCE0F30008AFE05 /* ContactsTVC.swift in Sources */,
 			);

@@ -35,6 +35,7 @@ class ContactsTVC: UITableViewController {
         
         cell.textLabel?.text = currentContact.name
         cell.detailTextLabel?.text = currentContact.phone
+        
         return cell
     }
 
@@ -46,6 +47,18 @@ class ContactsTVC: UITableViewController {
         tableView.reloadData()
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let contact = contactsFromSection(sectionNumber: indexPath.section)[indexPath.row]
+        let alert = UIAlertController(title: "calling " + contact.name, message: contact.phone, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "k", style: .default))
+        present(alert, animated: true)
+        
+        let historyController = tabBarController?.viewControllers![1] as! HistoryTVC
+        let newHistoryUnit = HistoryUnit(date: Date(timeIntervalSinceNow: 0), contact: contact)
+        historyController.history.append(newHistoryUnit)
+        historyController.tableView.reloadData()
+    }
+    
     //put every unique first character of the contact name into the sections
     func updateSections(){
         sections.removeAll()
