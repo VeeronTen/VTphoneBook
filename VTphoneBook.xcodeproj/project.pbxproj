@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5134831FCE1AC500D6B7E9 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5134821FCE1AC400D6B7E9 /* Contact.swift */; };
 		1EC0BD7A1FCDFE88008AFE05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0BD791FCDFE88008AFE05 /* AppDelegate.swift */; };
 		1EC0BD7C1FCDFE88008AFE05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0BD7B1FCDFE88008AFE05 /* ViewController.swift */; };
 		1EC0BD7F1FCDFE88008AFE05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC0BD7D1FCDFE88008AFE05 /* Main.storyboard */; };
 		1EC0BD811FCDFE88008AFE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC0BD801FCDFE88008AFE05 /* Assets.xcassets */; };
 		1EC0BD841FCDFE88008AFE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC0BD821FCDFE88008AFE05 /* LaunchScreen.storyboard */; };
+		1EC0BD8C1FCE0F30008AFE05 /* ContactsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0BD8B1FCE0F30008AFE05 /* ContactsTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E5134821FCE1AC400D6B7E9 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		1EC0BD761FCDFE88008AFE05 /* VTphoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTphoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC0BD791FCDFE88008AFE05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC0BD7B1FCDFE88008AFE05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		1EC0BD801FCDFE88008AFE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EC0BD831FCDFE88008AFE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EC0BD851FCDFE88008AFE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC0BD8B1FCE0F30008AFE05 /* ContactsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				1EC0BD801FCDFE88008AFE05 /* Assets.xcassets */,
 				1EC0BD821FCDFE88008AFE05 /* LaunchScreen.storyboard */,
 				1EC0BD851FCDFE88008AFE05 /* Info.plist */,
+				1EC0BD8B1FCE0F30008AFE05 /* ContactsTVC.swift */,
+				1E5134821FCE1AC400D6B7E9 /* Contact.swift */,
 			);
 			path = VTphoneBook;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5134831FCE1AC500D6B7E9 /* Contact.swift in Sources */,
 				1EC0BD7C1FCDFE88008AFE05 /* ViewController.swift in Sources */,
 				1EC0BD7A1FCDFE88008AFE05 /* AppDelegate.swift in Sources */,
+				1EC0BD8C1FCE0F30008AFE05 /* ContactsTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
