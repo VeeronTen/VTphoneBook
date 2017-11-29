@@ -108,20 +108,87 @@
             </objects>
             <point key="canvasLocation" x="857" y="286"/>
         </scene>
-        <!--View Controller-->
+        <!--New ContactVC-->
         <scene sceneID="pUP-LO-ZET">
             <objects>
-                <viewController id="gBy-EC-g35" sceneMemberID="viewController">
+                <viewController id="gBy-EC-g35" customClass="NewContactVC" customModule="VTphoneBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3er-A8-mAl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYo-vJ-aYz">
+                                <rect key="frame" x="55" y="220" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-yW-FnB">
+                                <rect key="frame" x="55" y="276" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lf-Dr-PW0">
+                                <rect key="frame" x="139" y="144" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGC-to-wFv">
+                                <rect key="frame" x="139" y="215" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="CRG-Cp-utS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSn-GN-PUt">
+                                <rect key="frame" x="139" y="275" width="129" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqu-Lr-nij">
+                                <rect key="frame" x="172" y="333" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addNewContact:" destination="gBy-EC-g35" eventType="touchUpInside" id="mzZ-go-688"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bqu-Lr-nij" firstAttribute="top" secondItem="RSn-GN-PUt" secondAttribute="bottom" constant="30" id="2Pp-WR-8d6"/>
+                            <constraint firstItem="ZaM-yW-FnB" firstAttribute="baseline" secondItem="RSn-GN-PUt" secondAttribute="baseline" id="8JG-Ec-oA9"/>
+                            <constraint firstItem="RSn-GN-PUt" firstAttribute="top" secondItem="mGC-to-wFv" secondAttribute="bottom" constant="30" id="Me1-ld-hv3"/>
+                            <constraint firstItem="Bqu-Lr-nij" firstAttribute="centerX" secondItem="RSn-GN-PUt" secondAttribute="centerX" id="UQ2-3a-3IJ"/>
+                            <constraint firstItem="RSn-GN-PUt" firstAttribute="trailing" secondItem="mGC-to-wFv" secondAttribute="trailing" id="VWF-Xf-6gT"/>
+                            <constraint firstItem="ZaM-yW-FnB" firstAttribute="centerY" secondItem="RSn-GN-PUt" secondAttribute="centerY" id="Z70-cn-dBm"/>
+                            <constraint firstItem="mGC-to-wFv" firstAttribute="leading" secondItem="eYo-vJ-aYz" secondAttribute="trailing" constant="15" id="ag4-ap-2TL"/>
+                            <constraint firstItem="mGC-to-wFv" firstAttribute="top" secondItem="0Lf-Dr-PW0" secondAttribute="bottom" constant="50" id="cKs-gB-gJy"/>
+                            <constraint firstItem="0Lf-Dr-PW0" firstAttribute="centerX" secondItem="j33-UF-lLp" secondAttribute="centerX" id="dom-Vf-w9u"/>
+                            <constraint firstItem="RSn-GN-PUt" firstAttribute="leading" secondItem="mGC-to-wFv" secondAttribute="leading" id="fBQ-dY-KqO"/>
+                            <constraint firstItem="0Lf-Dr-PW0" firstAttribute="top" secondItem="j33-UF-lLp" secondAttribute="top" constant="80" id="jW8-ae-pI3"/>
+                            <constraint firstItem="eYo-vJ-aYz" firstAttribute="centerY" secondItem="mGC-to-wFv" secondAttribute="centerY" id="jxc-eq-ist"/>
+                            <constraint firstItem="ZaM-yW-FnB" firstAttribute="leading" secondItem="eYo-vJ-aYz" secondAttribute="leading" id="m9T-8J-GsI"/>
+                            <constraint firstItem="mGC-to-wFv" firstAttribute="leading" secondItem="0Lf-Dr-PW0" secondAttribute="leading" id="mjM-T6-QMY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j33-UF-lLp"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8JG-Ec-oA9"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="nameTF" destination="mGC-to-wFv" id="4da-01-qbW"/>
+                        <outlet property="phoneTF" destination="RSn-GN-PUt" id="suD-SL-BhD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ez-YU-0BS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1619" y="280"/>
+            <point key="canvasLocation" x="1618.4000000000001" y="279.31034482758622"/>
         </scene>
         <!--Item-->
         <scene sceneID="D2O-9l-X6G">
